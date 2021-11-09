@@ -542,7 +542,7 @@ nav{
     }
 
     @media screen and (max-width: 480px) {
-      max-width: 100%;
+      max-width: 90%;
     }
 
     .collab{
@@ -554,6 +554,10 @@ nav{
       p{
         font-weight: lighter !important;
         margin-bottom: 20px;
+
+        @media (max-width: 425px) {
+          line-height: 2;
+        }
       }
     }
 
