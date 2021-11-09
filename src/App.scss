@@ -299,10 +299,18 @@ nav{
 .sect_project{
   width: 100%;
   position: relative;
+  @media(max-width: 768px){
+    text-align: center;
+  }
 
   h6{
     text-align: center;
     font-size: 1rem;
+    margin-top: 0;
+
+    @media (max-width:768px) {      
+      margin-bottom: 0.5rem;
+    }
   }
 
   .vertical{
@@ -312,6 +320,9 @@ nav{
     position: absolute;
     left: 50%;
     transform: translateY(-50%);
+    @media(max-width: 768px){
+      display: none;
+    }
   }
 
   .flex{
@@ -320,15 +331,30 @@ nav{
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    @media(max-width: 768px){
+      width: 90%;
+      margin: 14px auto;
+      display: inline-block;
+      justify-content: unset;
+      align-items: unset;
+      flex-wrap: unset;
+    }
   }
 
   .project1{
     .w_left{
       width: 66.666667%;
+      @media(max-width: 768px){
+        width: 100%;
+        display: none;
+      }
     }
 
     .w_right{
       width: 33.333333%;
+      @media(max-width: 768px){
+        width: 100%;
+      }
       .prj1{
         position: relative;
         // animation-delay: 0.2s;
@@ -343,6 +369,9 @@ nav{
           left: -53%;
           right: 0;
           bottom: 0;
+          @media(max-width: 768px){
+            display: none;
+          }
         }
         img{
           width: 100%;
@@ -358,6 +387,9 @@ nav{
   .project2{
     .w_left{
       width: 50%;
+      @media(max-width: 768px){
+        width: 100%;
+      }
       .prj2{
         position: relative;
         // animation-delay: 0.2s;
@@ -372,6 +404,9 @@ nav{
           left: 90%;
           right: 0;
           bottom: 0;
+          @media(max-width: 768px){
+            display: none;
+          }
         }
         img{
           width: 100%;
@@ -384,6 +419,10 @@ nav{
 
     .w_right{
       width: 50%;
+      @media(max-width: 768px){
+        display: none;
+        width: 100%;
+      }
     }
   }
   // End Project 2
@@ -391,10 +430,17 @@ nav{
   .project3{
     .w_left{
       width: 58.333333%;
+      @media(max-width: 768px){
+        width: 100%;
+        display: none;
+      }
     }
 
     .w_center{
       width: 33.333333%;
+      @media(max-width: 768px){
+        width: 100%;
+      }
       .prj3{
         position: relative;
         // animation-delay: 0.2s;
@@ -409,6 +455,9 @@ nav{
           left: -50%;
           right: 0;
           bottom: 0;
+          @media(max-width: 768px){
+            display: none;
+          }
         }
         img{
           width: 100%;
@@ -421,6 +470,10 @@ nav{
 
     .w_right{
       width: 8.333333%;
+      @media(max-width: 768px){
+        display: none;
+        width: 100%;
+      }
     }
   }
   // End Project 3
@@ -428,10 +481,17 @@ nav{
   .project4{
     .w_left{
       width: 8.333333%;
+      @media(max-width: 768px){
+        display: none;
+        width: 100%;
+      }
     }
 
     .w_center{
       width: 41.666667%;
+      @media(max-width: 768px){
+        width: 100%;
+      }
       .prj4{
         position: relative;
         // animation-delay: 0.2s;
@@ -446,6 +506,9 @@ nav{
           left: 88%;
           right: 0;
           bottom: 0;
+          @media(max-width: 768px){
+            display: none;
+          }
         }
         img{
           width: 100%;
@@ -458,6 +521,10 @@ nav{
 
     .w_right{
       width: 50%;
+      @media(max-width: 768px){
+        display: none;
+        width: 100%;
+      }
     }
   }
   // End Project 4
