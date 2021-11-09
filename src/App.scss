@@ -38,6 +38,8 @@ nav{
     a{
       color: #fff;
       transition: all 0.3s ease-out;
+      animation-delay: 0.3s;
+      text-decoration: none;
 
       &:hover{
         text-decoration: none;
@@ -50,6 +52,7 @@ nav{
     right: 80px;
     position: fixed;
     margin: 0;
+    list-style: none;
 
     @media(max-width: 768px) {
       display: none;
@@ -66,6 +69,7 @@ nav{
 
       a{
         color: #fff;
+        text-decoration: none;
 
         @media(max-width: 768px) {
           font-size: 20px;
@@ -81,6 +85,23 @@ nav{
         }
       }
     }
+
+    #home{
+      animation-delay: 0.3s;
+    }
+
+    #work{
+      animation-delay: 0.4s;
+    }
+
+    #about{
+      animation-delay: 0.5s;
+    }
+
+    #contact{
+      animation-delay: 0.6s;
+    }
+    // End Contact
   }
 
   #toggle{
@@ -177,9 +198,10 @@ nav{
 
       a{
         color: #fff;
+        text-decoration: none;
 
         @media(max-width: 768px) {
-          font-size: 30px;
+          font-size: 20px;
         }
 
         @media(max-width: 425px) {
@@ -197,5 +219,177 @@ nav{
         }
       }
     }
+  }
+}
+
+.footer{
+  .container{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+      max-width: 720px;
+    }
+
+    @media screen and (max-width: 480px) {
+      max-width: 100%;
+    }
+
+    .collab{
+      text-align: right;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+
+      p{
+        font-weight: lighter !important;
+        margin-bottom: 20px;
+      }
+    }
+
+    .hr{
+      background: rgba(255, 255, 255, 0.2);
+      height: 1px;
+    }
+
+    .info{
+      .flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        @media screen and (max-width: 768px){
+          
+        }
+
+        .wd{
+          width: 32%;
+
+          @media screen and (max-width: 768px){
+            width: 100%;
+          }
+        }
+
+        #personal{
+          @media screen and (max-width: 768px) {
+            text-align: center;
+          }
+          p{
+            color: grey;
+            font-weight: lighter;
+            font-size: 18px;
+          }
+
+          h4{
+            font-size: 18px;
+            font-weight: lighter;
+            animation-delay: 0.2s;
+          }
+        }
+
+        #media{
+          text-align: right;
+          @media screen and (max-width: 768px) {
+            text-align: center;
+          }
+          p{
+            color: grey;
+            font-weight: lighter;
+            animation-delay: 0s;
+          }
+
+          ul{
+            list-style: none;
+            margin: 24px 0;
+            @media screen and (max-width: 768px) {
+              // margin: 0 0 0 -22px;
+              margin: 24px 0;
+              padding: 0;
+            }
+            li{
+              display: inline-block;
+              font-weight: lighter;
+              color: #fff;
+              font-size: 18px;
+              padding-left: 20px;
+            }
+
+            #fb{
+              animation-delay: 0.4s;
+              &::before{
+                content: "";
+                display: inline-block;
+                border-radius: 100%;
+                height: 4px;
+                width: 4px;
+                margin-right: 6px;
+                background: #3b5998;
+              }
+            }
+
+            #ig{
+              animation-delay: 0.6s;
+              &::before{
+                content: "";
+                display: inline-block;
+                border-radius: 100%;
+                height: 4px;
+                width: 4px;
+                margin-right: 6px;
+                background: #fcaf45;
+              }
+            }
+
+            #tw{
+              animation-delay: 0.8s;
+              &::before{
+                content: "";
+                display: inline-block;
+                border-radius: 100%;
+                height: 4px;
+                width: 4px;
+                margin-right: 6px;
+                background: #55acee;
+              }
+            }
+
+            #yt{
+              animation-delay: 1s;
+              &::before{
+                content: "";
+                display: inline-block;
+                border-radius: 100%;
+                height: 4px;
+                width: 4px;
+                margin-right: 6px;
+                background: #c4302b;
+              }
+            }
+            // End YT
+          }
+        }
+
+        #address{
+          text-align: right;
+          @media screen and (max-width: 768px) {
+            text-align: center;
+          }
+          p{
+            color: grey;
+            font-weight: lighter;
+            animation-delay: 0s;
+          }
+          
+          h4{
+            font-size: 18px;
+            font-weight: lighter;
+            animation-delay: 0.2s;
+          }
+        }
+        // End Address
+      }
+    }
+
   }
 }
