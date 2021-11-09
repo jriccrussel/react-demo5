@@ -1,16 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import {WOW} from 'wowjs'
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
 
     const showMenu = () => setToggle(!toggle)
-
-    useEffect(() => {
-        const wow = new WOW({live: false})
-        wow.init()
-    }, [])
 
     return (
         <>

@@ -13,6 +13,9 @@ html, body {
 .whitespace {
   width: 100%;
   height: 100px;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 // Navigation
@@ -293,6 +296,164 @@ nav{
   }
 }
 
+.sect_project{
+  width: 100%;
+  position: relative;
+
+  h6{
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .vertical{
+    margin-top: 40px;
+    border-left: 1px solid #fff;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+
+  .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .project1{
+    .w_left{
+      width: 66.666667%;
+    }
+
+    .w_right{
+      width: 33.333333%;
+      .prj1{
+        position: relative;
+        &::after{
+          content: "timeless flow.";
+          font-family: "Roboto Mono";
+          font-size: 36px;
+          position: absolute;
+          color: #fff;
+          display: block;
+          top: 8%;
+          left: -53%;
+          right: 0;
+          bottom: 0;
+        }
+        img{
+          width: 100%;
+          height: 500px;
+          object-fit:cover;
+        }
+      }
+    }
+  }
+  // End Project 1
+
+  .project2{
+    .w_left{
+      width: 50%;
+      .prj2{
+        position: relative;
+        &::after{
+          content: "foretime.";
+          font-family: "Roboto Mono";
+          font-size: 36px;
+          position: absolute;
+          color: #fff;
+          display: block;
+          top: 80%;
+          left: 90%;
+          right: 0;
+          bottom: 0;
+        }
+        img{
+          width: 100%;
+          height: 500px;
+          object-fit:cover;
+        }
+      }
+    }
+
+    .w_right{
+      width: 50%;
+    }
+  }
+  // End Project 2
+
+  .project3{
+    .w_left{
+      width: 58.333333%;
+    }
+
+    .w_center{
+      width: 33.333333%;
+      .prj3{
+        position: relative;
+        &::after{
+          content: "never again.";
+          font-family: "Roboto Mono";
+          font-size: 36px;
+          position: absolute;
+          color: #fff;
+          display: block;
+          top: 80%;
+          left: -50%;
+          right: 0;
+          bottom: 0;
+        }
+        img{
+          width: 100%;
+          height: 500px;
+          object-fit:cover;
+        }
+      }
+    }
+
+    .w_right{
+      width: 8.333333%;
+    }
+  }
+  // End Project 3
+
+  .project4{
+    .w_left{
+      width: 8.333333%;
+    }
+
+    .w_center{
+      width: 41.666667%;
+      .prj4{
+        position: relative;
+        &::after{
+          content: "departure.";
+          font-family: "Roboto Mono";
+          font-size: 36px;
+          position: absolute;
+          color: #fff;
+          display: block;
+          top: 10%;
+          left: 88%;
+          right: 0;
+          bottom: 0;
+        }
+        img{
+          width: 100%;
+          height: 500px;
+          object-fit:cover;
+        }
+      }
+    }
+
+    .w_right{
+      width: 50%;
+    }
+  }
+  // End Project 4
+}
 
 // Footer
 .footer{

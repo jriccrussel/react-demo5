@@ -1,12 +1,6 @@
 import React, { useEffect } from 'react'
-import {WOW} from 'wowjs'
 
 const Footer = () => {
-
-    useEffect(() => {
-        const wow = new WOW({live: false})
-        wow.init()
-    }, [])
 
     return (
         <>
