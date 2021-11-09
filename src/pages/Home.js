@@ -44,8 +44,8 @@ const Home = () => {
                     <div className="w_left"></div>
 
                     <div className="w_right">
-                        <div className="prj1">
-                            <img src="https://images.unsplash.com/photo-1540349220179-09d3866f2e74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80" alt="" />
+                        <div className="prj1 wow fadeInUp">
+                            <img className="wow fadeInUp" src="https://images.unsplash.com/photo-1540349220179-09d3866f2e74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80" alt="" />
                         </div>
                     </div>
                 </div>
@@ -54,8 +54,8 @@ const Home = () => {
 
                 <div className="flex project2">
                     <div className="w_left">
-                        <div className="prj2">
-                            <img src="https://images.unsplash.com/photo-1468870045442-e7d799d8c98a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2448&q=80" alt="" />
+                        <div className="prj2 wow fadeInUp">
+                            <img className="wow fadeInUp" src="https://images.unsplash.com/photo-1468870045442-e7d799d8c98a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2448&q=80" alt="" />
                         </div>
                     </div>
 
@@ -70,8 +70,8 @@ const Home = () => {
                     </div>
 
                     <div className="w_center">
-                        <div className="prj3">
-                            <img src="https://images.unsplash.com/photo-1482501157762-56897a411e05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="" />
+                        <div className="prj3 wow fadeInUp">
+                            <img className="wow fadeInUp" src="https://images.unsplash.com/photo-1482501157762-56897a411e05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="" />
                         </div>
                     </div>
 
@@ -84,8 +84,8 @@ const Home = () => {
                     <div className="w_left"></div>
 
                     <div className="w_center">
-                        <div className="prj4">
-                            <img src="https://images.unsplash.com/photo-1435685813800-51ba4ceb9c4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1785&q=80" alt="" />
+                        <div className="prj4 wow fadeInUp">
+                            <img className="wow fadeInUp" src="https://images.unsplash.com/photo-1435685813800-51ba4ceb9c4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1785&q=80" alt="" />
                         </div>
                     </div>
 

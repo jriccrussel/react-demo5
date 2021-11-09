@@ -1,29 +1,50 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import {WOW} from 'wowjs'
+import gsap from 'gsap'
+
+const tl = gsap.timeline()
 
 const Navbar = () => {
+    const logo = useRef(null)
     const [toggle, setToggle] = useState(false)
 
     const showMenu = () => setToggle(!toggle)
 
+    useEffect(() => {
+        tl.from(logo.current, 1, {
+            delay: 0.4,
+            y: 10,
+            opacity: 0,
+            ease: "expo.easeInOut"
+        }, 0.1)
+
+        tl.staggerFrom("#menu li a", 1, {
+            delay: 0.4,
+            opacity: 0,
+            ease: "expo.easeInOut"
+        }, 0.1)
+        
+    }, [])
+
     return (
         <>
             <nav>
-                <span id="brad">
-                    <Link to="/" className="animate__animated animate__fadeInUp">jinn</Link>
+                <span id="brad" ref={logo}>
+                    <Link to="/">jinn</Link>
                 </span>
 
                 <ul id="menu">
-                    <li id="home" className="animate__animated animate__fadeInUp">
+                    <li>
                         <Link to="/">home<span>.</span></Link>
                     </li>
-                    <li id="work" className="animate__animated animate__fadeInUp">
+                    <li>
                         <Link to="/work">work<span>.</span></Link>
                     </li>
-                    <li id="about" className="animate__animated animate__fadeInUp">
+                    <li>
                         <Link to="/about">about me<span>.</span></Link>
                     </li>
-                    <li id="contact" className="animate__animated animate__fadeInUp">
+                    <li>
                         <Link to="/contact">contact<span>.</span></Link>
                     </li>
                 </ul>
