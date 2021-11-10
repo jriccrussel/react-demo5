@@ -579,6 +579,106 @@ nav{
       color: grey;
       font-size: 1rem;
     }
+
+    .work_wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .w_left{
+        width: 66.666667%;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+
+      .w_right{
+        width: 33.333333;
+        @media (max-width: 768px) {
+          width: 100%;
+          display: none;
+        }
+      }
+    }
+
+  }
+}
+
+// Contact
+.sect_form{
+  .wrapper{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+      max-width: 88%;
+    }
+
+    .w_left{
+      #contact-form{
+        margin: 5% 0;
+        .input-row{
+          padding: 10px 0;
+          label{
+            display: block;
+            font-size: .8em;
+            color: #999;
+            padding-left: 5px;
+            margin-bottom: 0.5rem;
+          }
+
+          .textarea{
+            border-bottom: 1px solid #dfdfdf;
+            input, textarea{
+              line-height: 1.8;
+              width: 100%;
+              padding: 5px;
+              border: none;
+              resize: vertical;
+              background: transparent;
+              color: #fff;
+              font-weight: bolder;
+
+              &:focus{
+                outline: none;
+                border: none;
+              }
+            }
+
+            #contact-name{
+
+            }
+
+            #contact-email{
+
+            }
+
+            #contact-project{
+
+            }
+            // End contact-project
+          }
+        }
+
+
+        #contact-submit{
+          text-transform: uppercase;
+          padding: 20px 30px;
+          background: transparent;
+          color: #dfdfdf;
+          font-size: 14px;
+          letter-spacing: 2px;
+          font-family: "Roboto Mono";
+          @media (max-width: 425px) {
+            width: 100%;
+          }
+        }
+        // end contact-submit
+      }
+    }
+
+    // End w_left
   }
 }
 
