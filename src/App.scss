@@ -553,6 +553,7 @@ nav{
   }
 }
 
+// About
 .abt_content{
   margin-left: 0;
   @media (max-width:768px) {
@@ -567,17 +568,35 @@ nav{
     @media (max-width:768px) {
       max-width: 100%;
     }
+
+    h1{
+      text-align: left;
+      font-size: 1.75rem;
+      margin-top: 0;
+      font-size: 2.5rem;
+    }
+
     h3{
       text-align: left;
       font-size: 1.75rem;
       margin-top: 0;
     }
 
-    p{
+    h6{
+      text-align: left;
+      font-size: 1rem;
+      margin-top: 0;
+    }
+
+    a, p{
       font-weight: 300;
       line-height: 36px;
       color: grey;
       font-size: 1rem;
+    }
+
+    a{
+      text-decoration: none;
     }
 
     .work_wrapper{
@@ -594,15 +613,83 @@ nav{
       }
 
       .w_right{
-        width: 33.333333;
+        width: 33.333333%;
         @media (max-width: 768px) {
           width: 100%;
           display: none;
         }
       }
+
+      .wd_left{
+        width: 65%;
+        @media (max-width:425px) {
+          width: 100%;
+        }
+      }
+
+      .wd_right{
+        width: 32%;
+        @media (max-width:425px) {
+          width: 100%;
+        }
+      }
+
+      .wd_left2, .wd_right2{
+        width: 50%;
+      }
+
+      .wd_left2{
+        text-align: left;
+        a{
+          ion-icon{
+            margin-right: 4px;
+            transform: translateY(2px);
+          }
+        }
+      }
+
+      .wd_right2{
+        text-align: right;
+        a{
+          ion-icon{
+            margin-left: 4px;
+            transform: translateY(2px);
+          }
+        }
+      }
+
+      .wd_left, .wd_right{
+        img{
+          height: 500px;
+          width: 100%;
+          object-fit: cover;
+          object-position: 50% 70%;
+          @media (max-width:425px) {
+            margin: 14px 0;
+          }
+        }
+      }
+
+      .wd_100{
+        width: 100%;
+      }
+
+      .wd{
+        width: 33.333333%;
+        @media (max-width:768px) {
+          width: 50%;
+        }
+        @media (max-width:425px) {
+          width: 100%;
+        }
+      }
     }
 
   }
+}
+
+.project_content{
+  padding: 0;
 }
 
 // Contact
