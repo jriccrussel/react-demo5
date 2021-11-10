@@ -296,6 +296,7 @@ nav{
   }
 }
 
+// Project
 .sect_project{
   width: 100%;
   position: relative;
@@ -528,6 +529,57 @@ nav{
     }
   }
   // End Project 4
+}
+
+// About
+.sect_abt_hero{
+  .wrapper{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    @media (max-width:768px) {
+      max-width: 100%;
+    }
+    img{
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      margin-top: 120px;
+      object-position: 50% 70%;
+      @media (max-width:425px) {
+        object-fit: none;
+      }
+    }
+  }
+}
+
+.abt_content{
+  margin-left: 0;
+  @media (max-width:768px) {
+    padding-top: 50px;
+    width: 88%;
+    margin: 0 auto;
+  }
+  .wrapper{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    @media (max-width:768px) {
+      max-width: 100%;
+    }
+    h3{
+      text-align: left;
+      font-size: 1.75rem;
+      margin-top: 0;
+    }
+
+    p{
+      font-weight: 300;
+      line-height: 36px;
+      color: grey;
+      font-size: 1rem;
+    }
+  }
 }
 
 // Footer
