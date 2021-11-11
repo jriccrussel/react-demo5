@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import {WOW} from 'wowjs'
 
 const Work = () => {
@@ -31,7 +32,9 @@ const Work = () => {
 
                     <div className="w_right">
                         <div className="prj1 wow fadeInUp" data-wow-delay="0.4s">
-                            <img className="wow fadeInUp" data-wow-delay="0.2s" src="https://images.unsplash.com/photo-1540349220179-09d3866f2e74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80" alt="" />
+                            <Link to="/project">
+                                <img className="wow fadeInUp" data-wow-delay="0.2s" src="https://images.unsplash.com/photo-1540349220179-09d3866f2e74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80" alt="" />  
+                            </Link>
                         </div>
                     </div>
                 </div>

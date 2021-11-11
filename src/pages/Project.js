@@ -1,10 +1,15 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
 import {WOW} from 'wowjs'
 import { IonIcon } from '@ionic/react'
 import { arrowBack, arrowForward } from 'ionicons/icons'
 
 const Project = () => {
+    const [state, setState] = useState({id: 0})
+    const {id} = useParams()
+
+    console.log(id)
+
     return (
         <>
             <div className="whitespace"></div>
@@ -64,13 +69,19 @@ const Project = () => {
                     <br/><br/>
                     <div className="work_wrapper flex">
                         <div className="wd_left2">
-                            <Link to="/work/project">
+                            <Link
+                                to={`/work/${ state.id - 1}`}
+                                className={ state.id === 0 ? "disable" : ""} 
+                            >
                                 <IonIcon icon={arrowBack}></IonIcon>prev
                             </Link>
                         </div>
 
                         <div className="wd_right2">
-                            <Link to="/work/project">
+                            <Link 
+                                to={`/work/${id + 1}`}
+                                className={ id === 0 ? "disable" : ""} 
+                            >
                                 next<IonIcon icon={arrowForward}></IonIcon>
                             </Link>
                         </div>
