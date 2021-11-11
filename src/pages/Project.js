@@ -3,12 +3,23 @@ import { Link, useParams } from 'react-router-dom'
 import {WOW} from 'wowjs'
 import { IonIcon } from '@ionic/react'
 import { arrowBack, arrowForward } from 'ionicons/icons'
+import { useGlobalContext } from '../context'
 
 const Project = () => {
     const [state, setState] = useState({id: 0})
     const {id} = useParams()
 
-    console.log(id)
+    // console.log(id)
+
+    const prevBtn = () => {
+        setState(state => state - 1)
+    }
+
+    const nextBtn = () => {
+        setState(state => state + 1)
+    }
+
+    const {hello} = useGlobalContext()
 
     return (
         <>
@@ -70,7 +81,8 @@ const Project = () => {
                     <div className="work_wrapper flex">
                         <div className="wd_left2">
                             <Link
-                                to={`/work/${ state.id - 1}`}
+                                onClick={prevBtn}
+                                to={`/work/${ state.id}`}
                                 className={ state.id === 0 ? "disable" : ""} 
                             >
                                 <IonIcon icon={arrowBack}></IonIcon>prev
@@ -79,7 +91,8 @@ const Project = () => {
 
                         <div className="wd_right2">
                             <Link 
-                                to={`/work/${id + 1}`}
+                                onClick={nextBtn}
+                                to={`/work/${state.id}`}
                                 className={ id === 0 ? "disable" : ""} 
                             >
                                 next<IonIcon icon={arrowForward}></IonIcon>
