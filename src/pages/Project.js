@@ -7,16 +7,6 @@ import { useGlobalContext } from '../context'
 import ReactPaginate from 'react-paginate'
 
 const Project = () => {
-    // const [state, setState] = useState({id: 0})
-    // const {id} = useParams()
-    // // console.log(id)
-    // const prevBtn = () => {
-    //     setState(state => state - 1)
-    // }
-    // const nextBtn = () => {
-    //     setState(state => state + 1)
-    // }
-
     const {
         project,
         offset,
@@ -92,35 +82,23 @@ const Project = () => {
                         </div>
                     </>
                 )
-            })}
-
-            <ReactPaginate
-                previousLabel={"Prev"}
-                nextLabel={"Next"}
-                pageCount={pageCount}
-                onPageChange={handlePageClick}
-                containerClassName={"pagination"}
-                previousLinkClassName={"pagination__link"}
-                nextLinkClassName={"pagination__link"}
-                disabledClassName={"pagination__link--disabled"}
-                activeClassName={"pagination__link--active"}
-            />
+            })}            
 
             <div className="abt_content project_content">
                 <div className="wrapper">
                     <br/><br/>
-                    <div className="work_wrapper flex">
-                        <div className="wd_left2">
-                            <Link to="/">
-                                <IonIcon icon={arrowBack}></IonIcon>prev
-                            </Link>
-                        </div>
-
-                        <div className="wd_right2">
-                            <Link to="/">
-                                next<IonIcon icon={arrowForward}></IonIcon>
-                            </Link>
-                        </div>
+                    <div className="wow fadeInUp" data-wow-delay="1.5s">                        
+                        <ReactPaginate
+                            previousLabel={"prev"}
+                            nextLabel={"next"}
+                            pageCount={pageCount}
+                            onPageChange={handlePageClick}
+                            containerClassName={"pagination"}
+                            previousLinkClassName={"pagination__link"}
+                            nextLinkClassName={"pagination__link"}
+                            disabledClassName={"pagination__link--disabled"}
+                            activeClassName={"pagination__link--active"}
+                        />
                     </div>
                     
                 </div>
