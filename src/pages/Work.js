@@ -31,11 +31,11 @@ const Work = () => {
                     <div className="w_left"></div>
 
                     <div className="w_right">
-                        <div className="prj1 wow fadeInUp" data-wow-delay="0.4s">
-                            <Link to="/project">
+                        <Link to="/work/project">
+                            <div className="prj1 wow fadeInUp" data-wow-delay="0.4s">
                                 <img className="wow fadeInUp" data-wow-delay="0.2s" src="https://images.unsplash.com/photo-1540349220179-09d3866f2e74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80" alt="" />  
-                            </Link>
-                        </div>
+                            </div>
+                        </Link>
                     </div>
                 </div>
 
@@ -43,9 +43,11 @@ const Work = () => {
 
                 <div className="flex project2">
                     <div className="w_left">
-                        <div className="prj2 wow fadeInUp" data-wow-delay="0.4s">
-                            <img className="wow fadeInUp" data-wow-delay="0.2s" src="https://images.unsplash.com/photo-1468870045442-e7d799d8c98a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2448&q=80" alt="" />
-                        </div>
+                        <Link to="/work/project">
+                            <div className="prj2 wow fadeInUp" data-wow-delay="0.4s">
+                                <img className="wow fadeInUp" data-wow-delay="0.2s" src="https://images.unsplash.com/photo-1468870045442-e7d799d8c98a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2448&q=80" alt="" />
+                            </div>
+                        </Link>
                     </div>
 
                     <div className="w_right"></div>
@@ -54,14 +56,14 @@ const Work = () => {
                 <div className="whitespace"></div>
 
                 <div className="flex project3">
-                    <div className="w_left">
-
-                    </div>
+                    <div className="w_left"></div>
 
                     <div className="w_center">
-                        <div className="prj3 wow fadeInUp" data-wow-delay="0.4s">
-                            <img className="wow fadeInUp" data-wow-delay="0.2s" src="https://images.unsplash.com/photo-1482501157762-56897a411e05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="" />
-                        </div>
+                        <Link to="/work/project">
+                            <div className="prj3 wow fadeInUp" data-wow-delay="0.4s">
+                                <img className="wow fadeInUp" data-wow-delay="0.2s" src="https://images.unsplash.com/photo-1482501157762-56897a411e05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="" />
+                            </div>
+                        </Link>
                     </div>
 
                     <div className="w_right"></div>
@@ -73,9 +75,11 @@ const Work = () => {
                     <div className="w_left"></div>
 
                     <div className="w_center">
-                        <div className="prj4 wow fadeInUp" data-wow-delay="0.4s">
-                            <img className="wow fadeInUp" data-wow-delay="0.2s" src="https://images.unsplash.com/photo-1435685813800-51ba4ceb9c4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1785&q=80" alt="" />
-                        </div>
+                       <Link to="/work/project">
+                            <div className="prj4 wow fadeInUp" data-wow-delay="0.4s">
+                                <img className="wow fadeInUp" data-wow-delay="0.2s" src="https://images.unsplash.com/photo-1435685813800-51ba4ceb9c4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1785&q=80" alt="" />
+                            </div>
+                       </Link>
                     </div>
 
                     <div className="w_right"></div>
