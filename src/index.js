@@ -7,11 +7,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { GlobalProvider } from './context'
 
 ReactDOM.render(
-  <GlobalProvider>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </GlobalProvider>,
+  <React.StrictMode>
+    <GlobalProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </GlobalProvider>
+  </React.StrictMode>,
   document.getElementById('root')
 )
 
